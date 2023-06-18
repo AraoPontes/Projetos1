@@ -28,7 +28,7 @@ dicas = eval(input('Responda 1 para Sim e 2 para Não '))
 if dicas == 1:
     print('Veja estas dicas incríveis de Alimentação Saudável dos especialistas do Hospital Albert Eistein: https://vidasaudavel.einstein.br/alimentacao-equilibrada/')
 if dicas == 2:
-    print('Ah, que pena. Mas você pode enviar o link deste site para o seu amigx ou parente. Que tal? ')
+    print(f'Ah, que pena. Mas você pode enviar o link deste site para o seu amigx ou parente. Que tal {nome}? ')
 
 
 

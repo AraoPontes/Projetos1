@@ -1,0 +1,61 @@
+hora2 = eval(input('Insira hora de entrada '))
+
+minutos2 = (input('Insira minutos de entrada '))
+
+print('{} : {}' .format(hora2, minutos2))
+
+if hora2 == 10:
+
+   minutos2 = eval(minutos2) - 15
+
+   print('Acesso Bloqueado Temporariamente. Aguarde 8 minutos ')
+
+   atraso = minutos2
+
+elif hora2 <= 11:
+
+   print('Acesso Bloqueado. Procure Gestão ')
+
+elif hora2 == 11:
+
+   atraso = 1
+
+   minutos2 = minutos2
+
+elif hora2 == 12:
+
+   atraso = 2
+
+   minutos2 = minutos2
+
+elif hora2 == 13:
+
+   atraso = 3
+
+   minutos2 = minutos2
+
+elif hora2 == 14:
+
+   atraso = 4
+
+   minutos2 = minutos2
+
+elif hora2 >= 15:
+
+   atraso = 5
+
+   print('ACESSO BLOQUEADO')
+
+   print('Você está fora de sua carga horária. Procure Gestão ou RH')
+
+if hora2 == 11:
+
+   print(f'Você está {atraso} hora e {minutos2} minutos acima do tolerável para atrasos ')
+
+elif hora2 >= 12:
+
+   print(f'Você está {atraso} horas e {minutos2} minuto atrasado ')
+
+elif hora2 < 11:
+
+   print(f'Já se passaram {minutos2} minutos do atraso tolerável ')
